@@ -20,8 +20,6 @@ void setup() {
 
 void loop() {
 
-        // send data only when you receive data:
-
         if(byteNum != 0 && millis() - lastData >= 1000){
           byteNum = 0;
           Serial.println("lost data..");
